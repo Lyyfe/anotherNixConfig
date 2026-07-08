@@ -3,12 +3,15 @@
   lib,
   config,
   pkgs,
+  modules
   ...
 }:
 {
   imports = [
     "./hardware-configuration.nix"
 
-    self.
+    modules.desktop
+    modules.fonts
+    mod
   ]
 }

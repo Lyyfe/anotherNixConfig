@@ -4,6 +4,7 @@
       maple-mono.Normal-Normal-Variable
       atkinson-hyperlegible-next
       twemoji-color-font
+      noto-fonts
     ];
   };
 }
