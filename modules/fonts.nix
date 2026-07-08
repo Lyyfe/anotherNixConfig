@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   fonts = {
     packages = with pkgs; [
       maple-mono.Normal-Normal-Variable
@@ -7,5 +6,4 @@
       twemoji-color-font
     ];
   };
-
 }
