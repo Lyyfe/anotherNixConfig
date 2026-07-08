@@ -10,6 +10,7 @@
       audacity # find out if they use audacity 3 or 4
       bitwarden-desktop
       davinci-resolve
+      # some firewall idk
     ]
 
 
