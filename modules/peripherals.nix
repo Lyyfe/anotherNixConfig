@@ -1,6 +1,8 @@
-#services.nix, idk i havent sorted these yet
+# peripherals.nix, i just yoinked from github,
+# https://github.com/ryan4yin/nix-config/blob/main/modules/nixos/desktop/peripherals.nix
 
-{...}: {
+{ pkgs, ... }:
+{
   #============================= Audio(PipeWire) =======================
 
   # List packages installed in system profile. To search, run:
@@ -71,5 +73,4 @@
       };
     };
   };
-}
 }

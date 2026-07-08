@@ -1,3 +1,5 @@
+# gaming.nix, for all the heated gamer moments
+
 {pkgs, ...}: {
   hardware.graphics = {
     enable = true;
@@ -9,6 +11,8 @@
     mangohud
     lutris
     bottles
+
+    prismlauncher # minecraft launcher
   ];
 
   environment.sessionVariables = {

@@ -12,6 +12,5 @@
 
     modules.desktop
     modules.fonts
-    mod
   ]
 }

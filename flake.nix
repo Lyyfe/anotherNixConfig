@@ -9,10 +9,10 @@
     nixpkgs,
     ...
   } @ inputs: {
-    nixosModules = {
+    nixyModules = {
       desktop = "./modules/desktop.nix";
-      fonts = "./modules/fonts.nix"
-      gaming = "./modules/gaming.nix"
+      fonts = "./modules/fonts.nix";
+      gaming = "./modules/gaming.nix";
       packages = "./modules/packages.nix";
       security = "./modules/security.nix";
       services = "./modules/services.nix";
@@ -22,8 +22,8 @@
       qemuvm = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = {
-          nixosModules = nixosModules;
-        }
+          inherit inputs;
+        };
         modules = [
           "./hosts/qemuvm/configuration.nix"
         ];
