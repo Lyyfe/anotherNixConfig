@@ -1,5 +1,6 @@
-# power.nix, yoinked
-# https://github.com/ryan4yin/nix-config/blob/main/modules/nixos/desktop/power.nix
+# power.nix, power profiles obvs
+# yoinked from https://github.com/ryan4yin/nix-config/blob/main/modules/nixos/desktop/power.nix
+
 {...}: {
   # TuneD - Tuning Profile Delivery Mechanism for Linux
   # A modern replacement for PPD(power-profiles-daemon)

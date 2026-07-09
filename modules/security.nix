@@ -1,6 +1,7 @@
 # security.nix, i have no idea if this is legit, i just yoinked from someone
 # https://github.com/ryan4yin/nix-config/blob/main/hardening/profiles/default.nix
 # https://github.com/ryan4yin/nix-config/blob/main/modules/nixos/desktop/security.nix
+
 {
   pkgs,
   modulesPath,

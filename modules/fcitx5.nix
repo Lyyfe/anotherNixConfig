@@ -1,3 +1,5 @@
+# fcitx5.nix, tool for input methods
+
 {pkgs, ...}: {
   i18n.inputMethod = {
     enable = true;

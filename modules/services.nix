@@ -1,5 +1,6 @@
-# services.nix, i just yoinked from github and got rid of most of it
-# https://github.com/ryan4yin/nix-config/blob/main/modules/nixos/desktop/peripherals.nix
+# services.nix, services obvs
+# yoinked from https://github.com/ryan4yin/nix-config/blob/main/modules/nixos/desktop/peripherals.nix
+
 {...}: {
   # enable bluetooth & gui paring tools - blueman
   # or you can use cli:

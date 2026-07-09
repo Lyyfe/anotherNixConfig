@@ -1,3 +1,5 @@
+# qemuvm/configuration.nix, for the vm im using to test this trash out on
+
 {
   config,
   modules,

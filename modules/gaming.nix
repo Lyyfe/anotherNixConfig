@@ -1,4 +1,5 @@
 # gaming.nix, for all the heated gamer moments
+
 {pkgs, ...}: {
   hardware.graphics = {
     enable = true;

@@ -1,5 +1,6 @@
-# pipewire.nix, i just yoinked from github,
-# https://github.com/ryan4yin/nix-config/blob/main/modules/nixos/desktop/peripherals.nix
+# pipewire.nix, audio stuff
+# yoinked from https://github.com/ryan4yin/nix-config/blob/main/modules/nixos/desktop/peripherals.nix
+
 {pkgs, ...}: {
   # List packages installed in system profile. To search, run:
   # $ nix search wget
