@@ -2,17 +2,27 @@
   config,
   modules,
   ...
-}:
-{
+}: {
   imports = [
     ./hardware-configuration.nix
 
     modules.desktop
+    modules.development
+    modules.fcitx5
     modules.fonts
+    modules.gaming
+    modules.media
+    modules.packages
+    modules.power
+    modules.security
+    modules.services
   ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
+    grub.enable = false;
+  };
 
   system.stateVersion = config.system.nixos.release;
 }

@@ -1,5 +1,4 @@
 # desktop.nix, for the desktop environment
-
 {pkgs, ...}: {
   environment.sessionVariables = {
     "NIXOS_OZONE_WL" = "1"; # for any ozone-based browser & electron apps to run on wayland
@@ -21,7 +20,6 @@
     hyprpaper # wallpaper utility, maybe replace with hyprlax
     nemo # file explorer
     mako # notification daemon
-
   ];
 
   programs.niri.enable = true; # window manager, maybe use hyprland for linux-antiquity

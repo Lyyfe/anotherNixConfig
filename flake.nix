@@ -4,34 +4,38 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05"; # stable channel
   };
 
-  outputs =
-    {
-      self,
-      nixpkgs,
-      ...
-    }@inputs:
-    {
-      modules = {
-        desktop = ./modules/desktop.nix;
+  outputs = {
+    self,
+    nixpkgs,
+    ...
+  } @ inputs: {
+    nixosModules = {
+      apparmor = .modules/apparmor.nix;
+      desktop = ./modules/desktop.nix;
+      development = ./modules/development.nix;
+      fcitx5 = ./modules/fcitx5.nix;
+      fonts = ./modules/fonts.nix;
+      gaming = ./modules/gaming.nix;
+      media = ./modules/media.nix;
+      nix = ./modules/media/nix.nix;
+      packages = ./modules/packages.nix;
+      pipewire = ./modules/pipewire.nix;
+      power = ./modules/power.nix;
+      security = ./modules/security.nix;
+      services = ./modules/services.nix;
+    };
 
-        fonts = ./modules/fonts.nix;
-        gaming = ./modules/gaming.nix;
-        packages = ./modules/packages.nix;
-        security = ./modules/security.nix;
-        services = ./modules/services.nix;
-      };
-
-      nixosConfigurations = {
-        qemuvm = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          specialArgs = {
-            inherit inputs;
-            modules = self.modules;
-          };
-          modules = [
-            ./hosts/qemuvm/configuration.nix
-          ];
+    nixosConfigurations = {
+      qemuvm = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = {
+          inherit inputs;
+          modules = self.nixosModules;
         };
+        modules = [
+          ./hosts/qemuvm/configuration.nix
+        ];
       };
     };
+  };
 }
