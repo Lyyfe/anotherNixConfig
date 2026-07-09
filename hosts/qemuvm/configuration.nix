@@ -1,16 +1,18 @@
 {
-  inputs,
-  lib,
   config,
-  pkgs,
-  modules
+  modules,
   ...
 }:
 {
   imports = [
-    "./hardware-configuration.nix"
+    ./hardware-configuration.nix
 
     modules.desktop
     modules.fonts
-  ]
+  ];
+
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  system.stateVersion = config.system.nixos.release;
 }
