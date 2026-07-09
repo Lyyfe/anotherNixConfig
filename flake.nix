@@ -34,6 +34,7 @@
           modules = self.nixosModules;
         };
         modules = [
+          {networking.hostname = "qemuvm"}
           ./hosts/qemuvm/configuration.nix
         ];
       };

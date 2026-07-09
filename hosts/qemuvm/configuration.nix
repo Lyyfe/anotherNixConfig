@@ -26,5 +26,5 @@
     grub.enable = false;
   };
 
-  system.stateVersion = config.system.nixos.release;
+  system.stateVersion = "26.05";
 }
