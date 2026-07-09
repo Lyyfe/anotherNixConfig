@@ -8,7 +8,6 @@
     alejandra # formatter
     nixd # language server
     nil # different language server, idk which one is better
-
   ];
   # sum devshell devenv type beat idk
 }

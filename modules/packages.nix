@@ -4,8 +4,16 @@
     equibop # main discord
     vesktop # uni discord
     audacity # find out if they use audacity 3 or 4
-    bitwarden-desktop # password manager, tbh mostly just the browser version
-    davinci-resolve # video editor
+
+    # bitwarden-desktop # password manager, tbh mostly just the browser version
+    # cooked, old electron version
+
+    # davinci-resolve # video editor
+    # cooked, unfree
+
+    # obsidian # text editor?
+    # cooked, unfree
+
     fastfetch # for the screenshots
     chezmoi # dotfile management, cuz i can use it on stuff that doesnt have home manager
 

@@ -20,6 +20,8 @@
     hyprpaper # wallpaper utility, maybe replace with hyprlax
     nemo # file explorer
     mako # notification daemon
+
+    # TODO add a display manager
   ];
 
   programs.niri.enable = true; # window manager, maybe use hyprland for linux-antiquity
