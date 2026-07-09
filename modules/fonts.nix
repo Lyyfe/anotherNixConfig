@@ -1,5 +1,4 @@
 #fonts.nix, sum cool fonts that i like
-
 {pkgs, ...}: {
   fonts = {
     packages = with pkgs; [

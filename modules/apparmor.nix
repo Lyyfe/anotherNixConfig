@@ -1,6 +1,5 @@
 #apparmor.nix, restrict program capabilities
 # yoinked from https://github.com/ryan4yin/nix-config/blob/main/hardening/apparmor/default.nix
-
 {
   config,
   pkgs,

@@ -1,5 +1,4 @@
 #flake.nix, the big file that controls everything else
-
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05"; # stable channel
@@ -34,7 +33,7 @@
           modules = self.nixosModules;
         };
         modules = [
-          {networking.hostname = "qemuvm"}
+          {networking.hostName = "qemuvm";}
           ./hosts/qemuvm/configuration.nix
         ];
       };

@@ -1,5 +1,4 @@
 # desktop.nix, desktop environment obvs
-
 {pkgs, ...}: {
   environment.sessionVariables = {
     "NIXOS_OZONE_WL" = "1"; # for any ozone-based browser & electron apps to run on wayland

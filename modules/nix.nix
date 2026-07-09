@@ -1,5 +1,4 @@
 #nix.nix, we heard you like nix, so we put a nix in your nix
-
 {pkgs, ...}: {
   nix.settings.experimental-features = [
     "nix-command"
@@ -12,4 +11,11 @@
     # i just might have needed to while i was writing this initially
     package-version-server
   ];
+
+  nix.gc = {
+    options = "--delete-older-than 30d";
+    automatic = true;
+  };
+
+  nixpkgs.config.allowUnfree = true;
 }

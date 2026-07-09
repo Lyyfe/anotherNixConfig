@@ -1,5 +1,4 @@
 # media.nix, goin 2 da moveys :)
-
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     mpc-qt
