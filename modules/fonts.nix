@@ -1,6 +1,5 @@
 #fonts.nix, sum cool fonts that i like
 {pkgs, ...}: {
-
   fonts = {
     enableDefaultPackages = true;
     enableGhostscriptFonts = true;

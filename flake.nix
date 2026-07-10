@@ -17,12 +17,16 @@
       fonts = ./modules/fonts.nix;
       gaming = ./modules/gaming.nix;
       media = ./modules/media.nix;
-      nix = ./modules/media/nix.nix;
+      nix = ./modules/nix.nix;
       packages = ./modules/packages.nix;
       pipewire = ./modules/pipewire.nix;
       power = ./modules/power.nix;
       security = ./modules/security.nix;
       services = ./modules/services.nix;
+    };
+
+    users = {
+      pandish = ./users/pandish.nix;
     };
 
     nixosConfigurations = {
@@ -31,6 +35,7 @@
         specialArgs = {
           inherit inputs;
           modules = self.nixosModules;
+          users = self.users;
         };
         modules = [
           {networking.hostName = "qemuvm";}

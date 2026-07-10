@@ -1,9 +1,9 @@
 #packages.nix, i havent organised these into modules yet so this is just miscellaneous garbage
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    equibop # main discord
-    vesktop # uni discord
-    audacity # find out if they use audacity 3 or 4
+    # equibop # main discord
+    # vesktop # uni discord
+    # audacity # find out if they use audacity 3 or 4
 
     # bitwarden-desktop # password manager, tbh mostly just the browser version
     # cooked, old electron version
@@ -27,10 +27,10 @@
   programs.nano.enable = true;
   programs.nano.syntaxHighlight = true;
 
-  # screen recorder
-  programs.obs-studio.enable = true;
-  programs.obs-studio.enableVirtualCamera = true;
+  # # screen recorder
+  # programs.obs-studio.enable = true;
+  # programs.obs-studio.enableVirtualCamera = true;
 
-  #bittorrent client, for my linux isos :)
-  services.qbittorrent.enable = true;
+  # #bittorrent client, for my linux isos :)
+  # services.qbittorrent.enable = true;
 }
