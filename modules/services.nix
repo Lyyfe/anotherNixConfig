@@ -1,4 +1,4 @@
-# services.nix, services obvs
+# services.nix, services obvs, kinda just miscellaneous for now
 # yoinked from https://github.com/ryan4yin/nix-config/blob/main/modules/nixos/desktop/peripherals.nix
 {...}: {
   # enable bluetooth & gui paring tools - blueman
@@ -19,5 +19,6 @@
   services = {
     printing.enable = true; # Enable CUPS to print documents.
     geoclue2.enable = true; # Enable geolocation services.
+    services.libinput.enable = true; # trackpad support
   };
 }

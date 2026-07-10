@@ -24,5 +24,9 @@
     # TODO add a display manager
   ];
 
+  services.displayManager.ly.enable = true; # use ly for now, maybe sddm later
+  
   programs.niri.enable = true; # window manager, maybe use hyprland for linux-antiquity
+
+  programs.xwayland.enable = true;
 }

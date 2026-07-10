@@ -25,6 +25,8 @@
     grub.enable = false;
   };
 
+  services.spice-vdagentd.enable # spice for VM copy pasting
+
   system.stateVersion = "26.05";
   # DONT CHANGE THIS DAWG, UNLESS YOU CHECK
   # https://nixos.org/manual/nixos/stable/#sec-upgrading
