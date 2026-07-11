@@ -2,6 +2,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     zed-editor # editor, obvs
+    gh # github cli
 
     # nix stuff
     devenv # development environments, could also just use nixshell

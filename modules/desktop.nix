@@ -29,4 +29,15 @@
   programs.niri.enable = true; # window manager, maybe use hyprland for linux-antiquity
 
   programs.xwayland.enable = true;
+
+
+  # Configure keymap in X11
+  services.xserver.xkb = {
+    layout = "gb";
+    variant = "extd";
+  };
+
+  # Configure console keymap
+  console.keyMap = "uk";
+
 }
