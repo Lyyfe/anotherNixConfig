@@ -1,6 +1,6 @@
 # services.nix, services obvs, kinda just miscellaneous for now
 # yoinked from https://github.com/ryan4yin/nix-config/blob/main/modules/nixos/desktop/peripherals.nix
-{...}: {
+{pkgs, ...}: {
   # enable bluetooth & gui paring tools - blueman
   # or you can use cli:
   # $ bluetoothctl
@@ -21,4 +21,8 @@
     geoclue2.enable = true; # Enable geolocation services.
     libinput.enable = true; # trackpad support
   };
+
+  environment.systemPackages = with pkgs; [
+    libinput
+  ];
 }

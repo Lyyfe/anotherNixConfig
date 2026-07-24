@@ -16,10 +16,13 @@
   environment.systemPackages = with pkgs; [
     quickshell # desktop shell
     fuzzel # application launcher
-    kitty # terminal emulator
     hyprpaper # wallpaper utility, maybe replace with hyprlax
     nemo # file explorer
     mako # notification daemon
+    alacritty
+
+    # kitty # terminal emulator
+    # busted rn with niri
 
     # TODO add a display manager
   ];
@@ -29,15 +32,4 @@
   programs.niri.enable = true; # window manager, maybe use hyprland for linux-antiquity
 
   programs.xwayland.enable = true;
-
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "gb";
-    variant = "extd";
-  };
-
-  # Configure console keymap
-  console.keyMap = "uk";
-
 }

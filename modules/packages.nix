@@ -16,7 +16,6 @@
 
     fastfetch # for the screenshots
     chezmoi # dotfile management, cuz i can use it on stuff that doesnt have home manager
-
     # TODO add some firewall idk
   ];
 
@@ -26,6 +25,8 @@
   # terminal text editor
   programs.nano.enable = true;
   programs.nano.syntaxHighlight = true;
+
+  programs.firefox.enable = true;
 
   # # screen recorder
   # programs.obs-studio.enable = true;
